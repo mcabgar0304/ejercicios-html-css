@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Satisfacción</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body style="background-color: rgb(99, 162, 114); align-content: center; min-height: 100vh; justify-items: center;">
+
+    <form style="background-color: rgb(176, 237, 179);border: 2px solid black; width: 30%; padding: 15px;"
+        action="reseñado.html">
+        <div style="text-align: center;">
+            <label id="titulo" for="ftitle">
+                Encuesta de Satisfacción
+            </label>
+        </div>
+        <br>
+
+        <!------ NOMBRE -------->
+        <label for="fname">Nombre (opcional)</label>
+        <br>
+        <input style="width: 50%;" type="text" name="fname" id="fname">
+        <br><br>
+
+        <!------ SERVICIO -------->
+        <label for="fservicio">Servicio utilizado</label>
+        <label class="obligatorio">*</label>
+        <br>
+        <input style="width: 50%;" type="text" name="fservicio" id="fservicio" required>
+        <br><br>
+
+        <!------ RECOMENDAR -------->
+        <label for="frecom">¿Recomendarías el servicio?</label>
+        <label class="obligatorio">*</label>
+        <br>
+        <label>
+            <input type="radio" name="recom" required>
+            Sí
+        </label>
+        <label>
+            <input type="radio" name="recom">
+            No
+        </label>
+        <br><br>
+
+        <!------ ASPECTOS A DESTACAR -------->
+        <label for="faspectos">Aspectos a destacar</label>
+        <br>
+        <label>
+            <input type="checkbox">
+            Atención
+        </label>
+        <label>
+            <input type="checkbox">
+            Rapidez
+        </label>
+        <label>
+            <input type="checkbox">
+            Precio
+        </label>
+        <label>
+            <input type="checkbox">
+            Calidad
+        </label>
+        <br><br>
+
+        <!------ VALORACIÓN GENERAL -------->
+        <label for="fvalor">Valoración general</label>
+        <label class="obligatorio">*</label>
+        <br>
+        <label class="star">
+            <input type="radio" name="valor" required>
+            ★
+        </label>
+        <label class="star">
+            <input type="radio" name="valor">
+            ★★
+        </label>
+        <label class="star">
+            <input type="radio" name="valor">
+            ★★★
+        </label>
+        <label class="star">
+            <input type="radio" name="valor">
+            ★★★★
+        </label>
+        <label class="star">
+            <input type="radio" name="valor">
+            ★★★★★
+        </label>
+        <br><br>
+
+        <!------ COMENTARIOS -------->
+        <label for="fcomentarios">Comentarios:</label>
+        <br>
+        <textarea id="comentarios" name="fcomentarios"></textarea>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <input type="submit" name="submit" id="submit" value="Enviar reseña">
+        </div>
+
+    </form>
+    <br><br>
+
+    <h2 id="reseñas">Reseñas</h2>
+    <!---------------------------- Tabla de Reservas ---------------------------------->
+    <table>
+        <tr>
+            <th>Cliente</th>
+            <th>Servicio</th>
+            <th>Valoración</th>
+            <th>¿Recomienda?</th>
+            <th>Comentarios</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Reparación</td>
+            <td class="cinco center">5</td>
+            <td class="center">Sí</td>
+            <td>Muy buen servicio</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Instalación</td>
+            <td class="cuatro center">4</td>
+            <td class="center">Sí</td>
+            <td>Rápido y eficaz</td>
+        </tr>
+        <tr>
+            <td>Lucía</td>
+            <td>Reparación</td>
+            <td class="tres center">3</td>
+            <td class="center">No</td>
+            <td>Tardaron demasiado</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Mantenimiento</td>
+            <td class="cinco center">5</td>
+            <td class="center">Sí</td>
+            <td>Excelente atención</td>
+        </tr>
+        <tr>
+            <td>Elena</td>
+            <td>Instalación</td>
+            <td class="dos center">2</td>
+            <td class="center">No</td>
+            <td>Precio elevado</td>
+        </tr>
+    </table>
+     <div style="text-align: center; margin: 20px;">
+
+        <input type="text" id="numSocio" name="numSocio" placeholder="Introduce el número de socio"
+            style="padding: 8px; width: 220px;">
+
+        <input type="button" value="Buscar" style="padding: 8px; cursor: pointer;">
+    </div>
+    <br>    
+    <!---------------------------- Tabla de Nº Reseñas ---------------------------------->
+    <table>
+        <tr>
+            <th></th>
+            <th class="star">★</th>
+            <th class="star">★★</th>
+            <th class="star">★★★</th>
+            <th class="star">★★★★</th>
+            <th class="star">★★★★★</th>
+        </tr>
+        <tr>
+            <td>Nº Reseñas</td>
+            <td class="center">0</td>
+            <td class="center">1</td>
+            <td class="center">1</td>
+            <td class="center">1</td>
+            <td class="center">2</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
