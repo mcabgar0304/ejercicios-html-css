@@ -1,0 +1,63 @@
+/* Formatos */
+#titulo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Comentarios */
+#comentarios {
+    width: 98%;
+    height: 80px;
+    resize: none;
+}
+
+#submit {
+    background-color: rgb(63, 120, 56);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.star {
+    color: yellow;
+    -webkit-text-stroke: 0.7px black;
+}
+
+.obligatorio {
+    color: rgb(207, 33, 33);
+}
+
+#reseñas {
+    background-color: rgb(176, 237, 179);
+    border-radius: 10px;
+    padding: 5px;
+}
+.center {
+    text-align: center;
+}
+
+/* Tabla */
+table {
+    border-collapse: collapse;
+    background-color: rgb(176, 237, 179);
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+/* Colores de Puntuación*/
+.dos {
+background-color: rgb(242, 149, 83);
+}
+.tres {
+background-color: rgb(240, 191, 93);
+}
+.cuatro {
+background-color: rgb(254, 254, 80);
+}
+.cinco {
+background-color: rgb(240, 219, 25);
+}
