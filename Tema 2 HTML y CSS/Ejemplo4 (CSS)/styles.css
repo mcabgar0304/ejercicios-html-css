@@ -1,0 +1,40 @@
+p {
+    font-family: courir;
+    font-size: 12px;
+}
+
+/* Padding*/
+.paddingGrande {
+    color: red;
+    padding: 30px;
+}
+
+.paddingPequeño {
+    color: orange;
+    padding: 3px;
+}
+
+/* Border */
+.borderGrande {
+    border: 10px solid goldenrod;
+}
+
+.borderPequeño {
+    border: 1px solid hotpink;
+}
+
+/* Margin */
+.marginGrande {
+    margin: 50px;
+}
+
+.marginPequeño {
+    margin: 5px;
+}
+
+/* Para un título especial */
+#titulo {
+    color: brown;
+    font-family: calibri;
+    font-size: 30px;
+}
